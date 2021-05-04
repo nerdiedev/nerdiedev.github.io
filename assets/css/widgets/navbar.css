@@ -1,0 +1,89 @@
+.navbar {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar a,
+.navbar span {
+    color: var(--text-on-color);
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav a {
+    margin: 0 20px;
+}
+
+.nav a:hover {
+    font-weight: 900;
+}
+
+.nav.row {
+    justify-content: flex-end;
+}
+
+.navbar .icon {
+    display: none;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 80%;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .navbar .icon {
+        display: initial;
+    }
+    .navbar > .row {
+        justify-content: space-between;
+    }
+    .nav.row {
+        flex-flow: column;
+        justify-content: start;
+        align-content: flex-start;
+        align-items: start;
+    }
+
+    .nav {
+        z-index: 1;
+        height: 100%;
+        position: fixed;
+        width: 0 !important;
+        top: 0;
+        left: 0;
+        background-color: var(--primary);
+        padding: 100px 0 0px;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .nav a,
+    .nav span {
+        padding: 15px 8px;
+        font-size: 30px;
+        transition: 0.1s;
+    }
+
+    .responsive {
+        width: 300px !important;
+    }
+
+    .closebtn {
+        position: absolute;
+        left: -100px;
+        z-index: 101;
+        transition: 1s;
+    }
+
+    .closebtn.responsive {
+        left: 80px;
+        transition: 0.5s;
+    }
+}

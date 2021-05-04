@@ -1,0 +1,58 @@
+:root {
+    --body-bg: #f9f9f9;
+    --primary: #6c7bb6;
+    --light: #b0c0ff;
+    --dark: #676d85;
+    --text-on-color: #000;
+    --text-on-body: #000;
+    --shadow: #0000002d;
+}
+
+.dark-mode:root {
+    --body-bg: #121212;
+    --primary: #b0c0ff;
+    --light: #dff6f9;
+    --dark: #adc3c6;
+    --text-on-color: #000;
+    --text-on-body: #fff;
+    --shadow: #cccccc3f;
+    --dark-nav: #292929;
+}
+
+.primary-color {
+    background-color: var(--primary);
+}
+
+.primary-color.light {
+    background-color: var(--light);
+}
+.primary-color.dark {
+    background-color: var(--dark);
+}
+
+.text-color {
+    color: var(--text-on-color);
+}
+.text-bh {
+    color: var(--text-on-body);
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 var(--shadow);
+}
+
+.dark-mode .navbar,
+.dark-mode .nav,
+.dark-mode footer {
+    background-color: var(--dark-nav);
+    color: var(--text-on-body);
+}
+
+.dark-mode .navbar a,
+.dark-mode .nav a,
+.dark-mode footer a,
+.dark-mode footer p,
+.dark-mode footer .icon {
+    background-color: var(--dark-nav);
+    color: var(--text-on-body);
+}

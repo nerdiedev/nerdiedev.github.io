@@ -1,0 +1,31 @@
+footer .icon {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--text-on-color);
+}
+
+footer .social a {
+    text-decoration: none;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-height: 100px;
+    padding: 30px 0 10px;
+}
+.footer .row {
+    justify-content: space-between;
+    width: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .footer .row {
+        flex-flow: column;
+    }
+    .footer .container {
+        margin: auto;
+    }
+}

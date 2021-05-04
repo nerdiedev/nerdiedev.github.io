@@ -1,0 +1,44 @@
+@import 'colors.css';
+@import './widgets/switch.css';
+@import './widgets/footer.css';
+@import './widgets/navbar.css';
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', 'sans-serif';
+    font-size: 14px;
+    color: var(--text-on-body);
+    background-color: var(--body-bg);
+    line-height: 1.4;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 20px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 80%;
+        padding: 20px 0;
+        margin: 0;
+    }
+}
