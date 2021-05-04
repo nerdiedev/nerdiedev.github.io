@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function (e) {
     var darkmode = localStorage.getItem('dark-mode');
     if (darkmode === null)
         localStorage.setItem('dark-mode', darkmodestate)
-    console.log('alo');
     darkmode = darkmode === "true";
     if (darkmodestate != darkmode) {
         darkMode();
