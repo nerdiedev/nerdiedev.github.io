@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+{%- include head.html -%}
+
+<body>
+
+
+    {% include header.html %}
+    <section id="banner" class="primary-color light banner">
+        <div class=" container column">
+
+            <h1>
+                < {{page.title}} />
+            </h1>
+            <h2> {{ page.subtitle }}</h2>
+
+            <div class="tags row">
+                {%- for category in page.tags -%}
+                <div class="tag primary-color dark">
+                    {{category}}
+                </div>
+
+                {%- endfor -%}
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    <div class="column">
+
+        <h3>Posts relacionados</h3>
+        <div class="row related">
+            {% assign firstCategory = page.categories | first %}
+
+            {% assign relatedCount = 0 %}
+            {% for related in site.categories[firstCategory] %}
+            {% if page.url != related.url %}
+
+            {% assign relatedCount = relatedCount | plus: 1 %}
+            <a href="{{related.url}}" class="card post">
+                <h2>{{ related.title }}</h2>
+
+                <div class="tags row">
+                    {%- for category in related.tags -%}
+                    <div class="tag primary-color dark">
+                        {{category}}
+                    </div>
+
+                    {%- endfor -%}
+                </div>
+                {{related.excerpt}}
+
+                <div class="row action">
+                    Leia mais <em class="fas fa-arrow-right"></em>
+                </div>
+            </a>
+            {% endif %}
+
+            {% if relatedCount == 3 %}
+            {% break %}
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% include footer.html %}
+
+    {% include scripts.html %}
+</body>
+
+</html>

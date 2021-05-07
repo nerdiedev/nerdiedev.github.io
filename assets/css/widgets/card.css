@@ -44,10 +44,23 @@ a.card {
     margin: 0 10px;
     color: var(--tag);
     font-weight: 600;
+    font-size: 1rem;
 }
 
 .action {
     justify-content: flex-end !important;
     color: var(--dark);
     margin-bottom: 20px;
+}
+
+.related h2 {
+    font-size: 1.7rem;
+}
+.related p {
+    font-size: 1.2rem;
+}
+
+.related .card {
+    max-width: 33%;
+    color: var(--text-on-body);
 }
