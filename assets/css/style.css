@@ -69,6 +69,36 @@ body {
     justify-content: flex-end !important;
 }
 
+img.profile {
+    max-width: 100%;
+    border-radius: 50%;
+    margin: 25% 0;
+    display: block;
+}
+.foto {
+    max-height: 300px;
+}
+
+#infos-card {
+    min-height: 100px;
+}
+
+blockquote {
+    margin: 20px 10px;
+    padding-left: 1.5rem;
+    border-left: 5px solid var(--primary);
+    line-height: 0rem;
+}
+
+.social.icons .icon {
+    margin: 0 5px;
+}
+
+.head {
+    width: 100%;
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 500px) {
     .container {
         max-width: 80%;
@@ -77,5 +107,9 @@ body {
     .banner .column {
         align-items: center;
         justify-content: center;
+    }
+
+    .card .row.head {
+        flex-flow: column;
     }
 }

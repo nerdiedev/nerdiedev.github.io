@@ -1,4 +1,5 @@
-footer .icon {
+footer .icon,
+.icon {
     font-size: 30px;
     text-decoration: none;
     color: var(--text-on-color);
