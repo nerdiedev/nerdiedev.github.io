@@ -6,15 +6,16 @@ date: 2021-05-06 22:50:00 -0300
 permalink: /:categories/:title
 category:
 ---
-<div class="row foto">
-    <img class="profile" src="/assets/img/cadu.png" alt="my picture" width="210" height="210" loading="lazy">
-</div>
 
 Olá! Meu nome é Carlos, mas sou conhecido como Cadu. Tenho 24 anos e decidi começar a compartilhar minhas experiências e
 aprendizados através de várias formas. Dentre essas, estou lançando esse blog, e também estou aproveitando para testar o
 uso do jekyll e hospedar meu próprio blog no github.
-
 Sou um `desenvolvedor`, `engenheiro de dados`, `maker` e `UX designer` - sim, também estudei design.
+
+
+<div class="row foto">
+    <img class="profile" src="/assets/img/cadu.png" alt="my picture" width="210" height="210" loading="lazy">
+</div>
 
 Desde a época da escola sempre tive muita facilidade em explicar as coisas para os outros, o que me fez trabalhar por
 alguns anos dando aulas em cursinhos e colégios de reforços. A vontade de produzir conteúdo vem desde o início, quando o
