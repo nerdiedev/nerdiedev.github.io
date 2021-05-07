@@ -6,6 +6,8 @@
     --text-on-color: #000;
     --text-on-body: #000;
     --shadow: #0000002d;
+    --card: #f9f9f9;
+    --tag: #fff;
 }
 
 .dark-mode:root {
@@ -17,6 +19,7 @@
     --text-on-body: #fff;
     --shadow: #cccccc3f;
     --dark-nav: #292929;
+    --card: #292929;
 }
 
 .primary-color {

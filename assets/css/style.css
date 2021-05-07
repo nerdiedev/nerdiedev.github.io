@@ -2,15 +2,16 @@
 @import './widgets/switch.css';
 @import './widgets/footer.css';
 @import './widgets/navbar.css';
+@import './widgets/card.css';
 
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Segoe UI', 'Roboto', 'sans-serif';
-    font-size: 14px;
+    font-family: 'Ubuntu mono', 'Roboto', 'sans-serif';
     color: var(--text-on-body);
     background-color: var(--body-bg);
     line-height: 1.4;
+    min-height: 100%;
 }
 
 .container {
@@ -35,10 +36,31 @@ body {
     justify-content: center;
 }
 
+.banner {
+    height: 310px;
+    margin-top: -20px;
+    padding: 60px 40px 20px;
+}
+
+.banner .column {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.banner h1 {
+    font-weight: 700;
+}
+.banner h2 {
+    font-weight: 500;
+}
+
 @media screen and (max-width: 500px) {
     .container {
         max-width: 80%;
         padding: 20px 0;
-        margin: 0;
+    }
+    .banner .column {
+        align-items: center;
+        justify-content: center;
     }
 }

@@ -1,0 +1,53 @@
+.card {
+    box-shadow: 0 4px 8px 0 var(--shadow);
+    transition: 0.3s;
+    border-radius: 5px;
+    min-width: 300px;
+    min-height: 250px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    margin: 0 1em 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card);
+    z-index: 2;
+    padding: 10px 50px !important;
+    flex-flow: column;
+}
+
+a.card {
+    text-decoration: none;
+}
+
+.post {
+    align-items: flex-start;
+}
+
+.post p {
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.post h2 {
+    font-size: 2.5rem;
+}
+
+.tags {
+    justify-content: left !important;
+}
+
+.tag {
+    padding: 5px 10px;
+    margin: 0 10px;
+    color: var(--tag);
+    font-weight: 600;
+}
+
+.action {
+    justify-content: flex-end !important;
+    color: var(--dark);
+    margin-bottom: 20px;
+}

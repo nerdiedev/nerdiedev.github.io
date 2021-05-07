@@ -1,0 +1,28 @@
+---
+
+title: "nerdie.dev"
+layout: home
+---
+
+{% for post in site.posts %}
+
+<a href="{{ post.url }}" class="card text-bh post">
+    <h2>
+        {{ post.title }}
+    </h2>
+    <div class="tags row">
+        {%- for category in post.categories -%}
+        <div class="tag primary-color dark">
+            {{category}}
+        </div>
+
+        {%- endfor -%}
+    </div>
+    {{ post.excerpt }}
+    <div class="row action">
+        Leia mais <em class="fas fa-arrow-right"></em>
+    </div>
+</a>
+
+
+{% endfor %}

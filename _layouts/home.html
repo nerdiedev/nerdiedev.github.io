@@ -24,7 +24,31 @@
 
         {% include header.html %}
 
+        <section id="banner" class="primary-color light banner">
+            <div class=" container column">
+                <div class="row">
+                    <img src="/assets/img/logo_nobg.png" alt="" height="150px">
+                </div>
+                <h1>
+                    < nerdie.dev />
+                </h1>
+                <h2>Bem vindo ao meu blog!</h2>
+            </div>
+        </section>
+        <section>
+
+            <!--
+            {% for category in site.categories %}
+
+            {{ category[0] }}
+
+            {% endfor %}-->
+        </section>
+
+
+
         <main class="container">
+
             {{ content }}
         </main>
 
@@ -34,6 +58,9 @@
             onload="this.rel='stylesheet'" />
         <link rel="preload" as="style"
             href="https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext&display=swap"
+            onload="this.rel='stylesheet'">
+        <link rel="preload" as="style"
+            href="https://fonts.googleapis.com/css?family=Ubuntu%20Mono:400,300,700&subset=latin,latin-ext&display=swap"
             onload="this.rel='stylesheet'">
         <script src="/assets/js/main.js"></script>
 </body>
