@@ -58,6 +58,10 @@ body {
     margin: 0;
 }
 
+.dark-mode .banner {
+    color: var(--dark-nav);
+}
+
 @media screen and (max-width: 500px) {
     .container {
         max-width: 80%;
