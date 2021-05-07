@@ -7,7 +7,7 @@
 
 .navbar a,
 .navbar span {
-    color: var(--text-on-color);
+    color: var(--nav-text);
     text-align: center;
     padding: 0;
     text-decoration: none;
@@ -17,6 +17,8 @@
 
 .nav a {
     margin: 0 20px;
+
+    font-size: 1.5rem;
 }
 
 .nav a:hover {

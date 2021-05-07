@@ -4,8 +4,15 @@ footer .icon {
     color: var(--text-on-color);
 }
 
-footer .social a {
+footer a,
+footer .icon,
+footer p {
     text-decoration: none;
+    color: var(--nav-text);
+}
+
+footer p {
+    font-size: 1.5rem;
 }
 
 .footer {
