@@ -26,13 +26,11 @@
         </div>
     </section>
 
-    <main class="container">
+    <main class="container" id="post">
         {{ content }}
     </main>
 
-    <div class="column">
-
-
+    <section class="column">
         {% assign firstCategory = page.categories | first %}
 
         {% assign relatedCount = 0 %}
@@ -66,7 +64,8 @@
         </div>
         {% endif %}
         {% endfor %}
-    </div>
+    </section>
+
     {% include footer.html %}
 
     {% include scripts.html %}
